@@ -175,6 +175,7 @@ body {
 
   .page_img {
     opacity: 0.4;
+   
   }
 
 }
@@ -396,7 +397,7 @@ body {
 .inside_data_blocks {
   display: flex;
   flex-direction: row;
-    align-items: flex-start;
+  justify-content: space-between;
   gap: 30px;
   padding: 0px 0.5px 80px 0.5px;
 }
@@ -442,22 +443,20 @@ body {
   }
 
     .inside_data_block {
-     min-width: 350px;
   margin: 0px auto;
     }
 
+}
+@media (max-width: 760px){
+.inside_data_block {
+  width: 100%;
+
+}
 }
 
 
 @media (max-width: 675px) {
 
-  
-    .inside_data_blocks {
-      padding-left: 0px;
-      margin-left: 0px;
-      width: 100%;
-  
-    }
 
 .announce_block {
     padding: 60px 13px 60px 13px;
@@ -481,14 +480,6 @@ font-size: 12px;
 }
 
 @media (max-width: 375px) {
-
-  .data_block {
-      margin-right: 30px;
-    }
-
-  .inside_data_block {
-  width: 100%;
-}
 
 .data_title {
   font-size: 32px;
@@ -543,6 +534,7 @@ font-size: 12px;
 
 .inside_data_block2 {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
   padding: 0px 0.5px;
   
@@ -553,8 +545,7 @@ font-size: 12px;
   flex-direction: column;
   width: 230px;
     height: 341px;
-  
-    background: #FFFFFF;
+background: #FFFFFF;
 }
 
 .data_block2_text{
@@ -564,7 +555,7 @@ font-size: 12px;
 .block2_title {
   font-weight: 700;
     font-size: 16px;
-    line-height: 150%px;
+    line-height: 150%;
     letter-spacing: 0.1px;
     color: #252B42;
 }
@@ -579,7 +570,6 @@ font-size: 12px;
 
 @media (max-width: 1050px) {
   .data_block2 {
-    width: 340px;
      margin: 0px auto;
     }
   
@@ -587,21 +577,29 @@ font-size: 12px;
 flex-wrap: wrap;
   }
 }
+
+
 @media (max-width: 750px) {
 
+
+
   .data_block2 {
-    width: 220px;
     margin: 0px auto;
   }
 }
 @media (max-width: 675px) {
+  .inside_data_blocks{
+  }
   .announce_block {
     padding: 60px 13px 60px 13px;
   }
 
 }
 
-@media (max-width: 470px) {
+@media (max-width: 530px) {
+  .data_block2 {
+      width: 100%;
+    }
   .announce_block2 {
     padding: 60px 13px 60px 13px;
   }
@@ -728,6 +726,7 @@ width: 600px;
 
 .data_block3 {
  flex-wrap: wrap;
+ margin: 0px auto;
  
 }
 .block3_title {
