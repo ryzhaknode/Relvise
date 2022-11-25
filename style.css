@@ -131,9 +131,7 @@ body {
   transition: 0.5s;
 }
 
-.menu_link:hover {
-  color: #ff7b47;
-}
+
 
 @media (max-width: 425px) {
   .menu_link {
@@ -590,8 +588,9 @@ flex-wrap: wrap;
   }
 }
 @media (max-width: 750px) {
+
   .data_block2 {
-    width: 220px;
+    min-width: 220px;
     margin: 0px auto;
   }
 }
