@@ -590,7 +590,7 @@ flex-wrap: wrap;
 @media (max-width: 750px) {
 
   .data_block2 {
-    min-width: 220px;
+    width: 220px;
     margin: 0px auto;
   }
 }
@@ -1396,10 +1396,21 @@ transition: 0.5s;
 }
 
 @media (max-width: 850px) {
+
+
+
   .info_colum:not(:last-child) {
     padding-right: 35px;
   }
 
+}
+
+@media (max-width: 500px) {
+
+  .info_colums_content {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 350px) {
